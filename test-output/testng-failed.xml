@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="locators.LocateByCssSelectorAttribute">
+      <class name="keyboardevents.KeyboardEvents">
         <methods>
-          <include name="locateByCss"/>
-          <include name="closeChromeBrowser"/>
           <include name="startChromeBrowser"/>
+          <include name="keyBoardEvent"/>
           <include name="openUrl"/>
+          <include name="closeChromeBrowser"/>
         </methods>
-      </class> <!-- locators.LocateByCssSelectorAttribute -->
+      </class> <!-- keyboardevents.KeyboardEvents -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

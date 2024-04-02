@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-02T01:37:25 EDT" name="Default suite" finished-at="2024-04-02T01:37:32 EDT" duration-ms="6654">
+  <suite started-at="2024-04-02T06:07:17 EDT" name="Default suite" finished-at="2024-04-02T06:07:28 EDT" duration-ms="11304">
     <groups>
     </groups>
-    <test started-at="2024-04-02T01:37:25 EDT" name="Default test" finished-at="2024-04-02T01:37:32 EDT" duration-ms="6654">
-      <class name="dropdownhandling.SelectByIndex">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:dropdownhandling.SelectByIndex@47d9a273]" started-at="2024-04-02T01:37:18 EDT" name="startChromeBrowser" finished-at="2024-04-02T01:37:25 EDT" duration-ms="7819" status="PASS">
+    <test started-at="2024-04-02T06:07:17 EDT" name="Default test" finished-at="2024-04-02T06:07:28 EDT" duration-ms="11304">
+      <class name="keyboardevents.KeyboardEvents">
+        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:keyboardevents.KeyboardEvents@1151e434]" started-at="2024-04-02T06:07:08 EDT" name="startChromeBrowser" finished-at="2024-04-02T06:07:17 EDT" duration-ms="8430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:dropdownhandling.SelectByIndex@47d9a273]" started-at="2024-04-02T01:37:25 EDT" name="openUrl" finished-at="2024-04-02T01:37:27 EDT" duration-ms="1500" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:keyboardevents.KeyboardEvents@1151e434]" started-at="2024-04-02T06:07:17 EDT" name="openUrl" finished-at="2024-04-02T06:07:18 EDT" duration-ms="816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="selectByIndex()[pri:0, instance:dropdownhandling.SelectByIndex@47d9a273]" started-at="2024-04-02T01:37:27 EDT" name="selectByIndex" finished-at="2024-04-02T01:37:32 EDT" duration-ms="5081" status="PASS">
+        <test-method signature="keyBoardEvent()[pri:0, instance:keyboardevents.KeyboardEvents@1151e434]" started-at="2024-04-02T06:07:18 EDT" name="keyBoardEvent" finished-at="2024-04-02T06:07:28 EDT" duration-ms="10420" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectByIndex -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:dropdownhandling.SelectByIndex@47d9a273]" started-at="2024-04-02T01:37:32 EDT" name="closeChromeBrowser" finished-at="2024-04-02T01:37:32 EDT" duration-ms="342" status="PASS">
+        </test-method> <!-- keyBoardEvent -->
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:keyboardevents.KeyboardEvents@1151e434]" started-at="2024-04-02T06:07:28 EDT" name="closeChromeBrowser" finished-at="2024-04-02T06:07:28 EDT" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- dropdownhandling.SelectByIndex -->
+      </class> <!-- keyboardevents.KeyboardEvents -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
