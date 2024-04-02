@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="keyboardevents.KeyboardEvents">
+      <class name="scrollhandling.ScrollToElement">
         <methods>
-          <include name="startChromeBrowser"/>
-          <include name="keyBoardEvent"/>
           <include name="openUrl"/>
+          <include name="scrollToSpecificElement"/>
           <include name="closeChromeBrowser"/>
+          <include name="startChromeBrowser"/>
         </methods>
-      </class> <!-- keyboardevents.KeyboardEvents -->
+      </class> <!-- scrollhandling.ScrollToElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
