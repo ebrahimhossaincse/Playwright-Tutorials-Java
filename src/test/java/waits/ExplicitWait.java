@@ -13,7 +13,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class ExplicitWait {
-	protected static String url = "https://demoqa.com/automation-practice-form";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -40,7 +40,7 @@ public class ExplicitWait {
 
 	@Test
 	public void explicitWait() throws InterruptedException {
-		ElementHandle element = page.waitForSelector("#firstName");
+		ElementHandle element = page.waitForSelector("#name");
 
 		// If element is found, print its text content
 		if (element != null) {

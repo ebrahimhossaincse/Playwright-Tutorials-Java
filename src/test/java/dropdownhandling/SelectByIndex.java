@@ -15,7 +15,7 @@ import com.microsoft.playwright.options.SelectOption;
 
 
 public class SelectByIndex {
-	protected static String url = "https://demoqa.com/select-menu";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -42,9 +42,9 @@ public class SelectByIndex {
 
 	@Test(priority = 0)
 	public void selectByIndex() throws InterruptedException {
-		ElementHandle locator = page.querySelector("#oldSelectMenu");
+		ElementHandle locator = page.querySelector("#state");
         locator.selectOption(new SelectOption().setIndex(2));
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 
 	@AfterSuite

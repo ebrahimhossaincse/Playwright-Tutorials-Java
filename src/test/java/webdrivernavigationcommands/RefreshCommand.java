@@ -9,7 +9,6 @@ import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.options.WaitUntilState;
 
 public class RefreshCommand {
 	protected static String url = "https://demoqa.com/";
@@ -31,17 +30,16 @@ public class RefreshCommand {
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 	
-	@SuppressWarnings("static-access")
 	@BeforeClass
 	public void openUrl() throws InterruptedException {
-		page.navigate(url, new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED.NETWORKIDLE));
+		page.navigate(url);
 		Thread.sleep(3000);
 	}
 	
 	@Test(priority = 0)
 	public void refreshCommand() throws InterruptedException {
 		page.reload();
-		Thread.sleep(3000);
+		page.waitForLoadState();
 	}
 
 

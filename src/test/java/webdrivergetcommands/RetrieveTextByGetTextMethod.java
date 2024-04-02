@@ -10,10 +10,9 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.options.WaitUntilState;
 
 public class RetrieveTextByGetTextMethod {
-	protected static String url = "https://demoqa.com/automation-practice-form";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;
@@ -27,21 +26,19 @@ public class RetrieveTextByGetTextMethod {
 		browserType = playwright.chromium();
 		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
 		context = browser.newContext(new Browser.NewContextOptions());
-		
 		page = browser.newPage();
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
-    @SuppressWarnings("static-access")
 	@BeforeClass
 	public void openUrl() throws InterruptedException{
-		page.navigate(url, new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED.NETWORKIDLE));
-		Thread.sleep(2000);
+		page.navigate(url);
+		page.waitForLoadState();
 	}
 
 	@Test(priority = 0)
 	public void getTextMethod() throws InterruptedException {
-		Locator locator = page.locator("//*[text()='Student Registration Form']");
+		Locator locator = page.locator("//form[@id='practiceForm']/h1");
 		System.out.println(locator.textContent());
 		Thread.sleep(2000);
 	}

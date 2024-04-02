@@ -15,7 +15,7 @@ import com.microsoft.playwright.options.SelectOption;
 
 
 public class SelectByValue {
-	protected static String url = "https://demoqa.com/select-menu";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;
@@ -41,8 +41,8 @@ public class SelectByValue {
 
 	@Test(priority = 0)
 	public void selectByValue() throws InterruptedException {
-		ElementHandle locator = page.querySelector("#oldSelectMenu");
-        locator.selectOption(new SelectOption().setValue("4"));
+		ElementHandle locator = page.querySelector("#state");
+        locator.selectOption(new SelectOption().setValue("Rajasthan"));
 		Thread.sleep(3000);
 	}
 

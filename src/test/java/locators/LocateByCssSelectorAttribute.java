@@ -13,7 +13,7 @@ import com.microsoft.playwright.Playwright;
 
 public class LocateByCssSelectorAttribute {
 
-	String url = "https://www.daraz.com.bd/";
+	String url = "https://www.tutorialspoint.com/selenium/practice/buttons.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -41,7 +41,7 @@ public class LocateByCssSelectorAttribute {
 
 	@Test
 	public void locateByCss() throws InterruptedException {
-		ElementHandle element = page.querySelector("bld-txt");
+		ElementHandle element = page.querySelector("button.btn-primary");
 		element.click();
 		Thread.sleep(5000);
 	}

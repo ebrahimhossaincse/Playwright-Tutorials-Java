@@ -10,7 +10,6 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.options.WaitUntilState;
 
 public class SelectRadioButton {
 	String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
@@ -33,11 +32,10 @@ public class SelectRadioButton {
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
-    @SuppressWarnings("static-access")
 	@BeforeClass
 	public void openUrl() throws InterruptedException{
-		page.navigate(url, new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED.LOAD));
-		Thread.sleep(3000);
+		page.navigate(url);
+		page.waitForLoadState();
 	}
 
 	@Test

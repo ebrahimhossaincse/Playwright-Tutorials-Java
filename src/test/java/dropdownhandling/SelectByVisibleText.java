@@ -15,7 +15,7 @@ import com.microsoft.playwright.options.SelectOption;
 
 
 public class SelectByVisibleText {
-	protected static String url = "https://demoqa.com/select-menu";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;
@@ -41,9 +41,9 @@ public class SelectByVisibleText {
 
 	@Test(priority = 0)
 	public void selectByVisibleText() throws InterruptedException {
-		ElementHandle locator = page.querySelector("#oldSelectMenu");
-		locator.selectOption(new SelectOption().setLabel("White"));
-		Thread.sleep(3000);
+		ElementHandle locator = page.querySelector("#state");
+		locator.selectOption(new SelectOption().setLabel("Haryana"));
+		Thread.sleep(5000);
 	}
 
 	@AfterSuite

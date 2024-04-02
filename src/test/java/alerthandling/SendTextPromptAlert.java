@@ -13,7 +13,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class SendTextPromptAlert {
-	protected static String url = "https://demoqa.com/alerts";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/alerts.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -52,13 +52,13 @@ public class SendTextPromptAlert {
 				dialog.accept();
 				System.out.println("Accepted Confirmation.");
 			} else if (dialog.type().equals("prompt")) {
-				dialog.accept("Entered text for prompt");
+				dialog.accept("Hello - Playwright");
 				System.out.println("Accepted Prompt with Text.");
 			}
 		});
-		ElementHandle element = page.querySelector("#promtButton");
+		ElementHandle element = page.querySelector("//button[@onclick='myPromp()']");
 		element.click();
-		Thread.sleep(2000);
+		Thread.sleep(7000);
 	}
 
 	@AfterSuite

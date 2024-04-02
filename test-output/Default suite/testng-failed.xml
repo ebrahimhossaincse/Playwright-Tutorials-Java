@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mouseevents.ClickAndHold">
+      <class name="locators.LocateByCssSelectorAttribute">
         <methods>
+          <include name="locateByCss"/>
+          <include name="closeChromeBrowser"/>
           <include name="startChromeBrowser"/>
           <include name="openUrl"/>
-          <include name="closeChromeBrowser"/>
-          <include name="clickAndHoldTest"/>
         </methods>
-      </class> <!-- mouseevents.ClickAndHold -->
+      </class> <!-- locators.LocateByCssSelectorAttribute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

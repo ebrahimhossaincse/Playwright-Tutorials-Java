@@ -4,16 +4,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.options.WaitUntilState;
 
 public class RetrievePageSourceOfCurrentWebPage {
-	protected static String url = "https://demoqa.com/automation-practice-form";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;
@@ -32,11 +30,10 @@ public class RetrievePageSourceOfCurrentWebPage {
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
-    @SuppressWarnings("static-access")
 	@BeforeClass
 	public void openUrl() throws InterruptedException{
-		page.navigate(url, new Page.NavigateOptions().setWaitUntil(WaitUntilState.DOMCONTENTLOADED.NETWORKIDLE));
-		Thread.sleep(3000);
+		page.navigate(url);
+		page.waitForLoadState();
 	}
 
 	@Test(priority = 0)

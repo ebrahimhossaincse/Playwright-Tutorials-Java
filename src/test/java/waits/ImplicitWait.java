@@ -33,7 +33,6 @@ public class ImplicitWait {
 	@BeforeClass
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
-		page.waitForLoadState();
 	}
 
 	@Test
@@ -41,7 +40,7 @@ public class ImplicitWait {
 		// Implicit Wait
 		page.waitForTimeout(2000);
 		page.navigate(url);
-		Thread.sleep(3000);
+		page.wait(5000);
 	}
 
 	@AfterSuite

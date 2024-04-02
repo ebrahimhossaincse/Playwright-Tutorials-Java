@@ -36,7 +36,6 @@ public class CrossBrowserConfiguration {
 
 	}
 
-	@SuppressWarnings("static-access")
 	public void launchApplication(String url) {
 		page.navigate(url);
 	}

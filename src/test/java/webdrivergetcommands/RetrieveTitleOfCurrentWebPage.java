@@ -11,7 +11,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class RetrieveTitleOfCurrentWebPage {
-	protected static String url = "https://demoqa.com/automation-practice-form";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php";
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;
@@ -33,7 +33,7 @@ public class RetrieveTitleOfCurrentWebPage {
 	@BeforeClass
 	public void openUrl() throws InterruptedException{
 		page.navigate(url);
-		Thread.sleep(3000);
+		page.waitForLoadState();
 	}
 
 	@Test(priority = 0)

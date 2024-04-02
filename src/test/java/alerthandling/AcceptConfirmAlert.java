@@ -12,7 +12,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class AcceptConfirmAlert {
-	protected static String url = "https://demoqa.com/alerts";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/alerts.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -56,7 +56,7 @@ public class AcceptConfirmAlert {
 			}
 		});
 
-		Locator alertButton = page.locator("//button[@id='confirmButton']");
+		Locator alertButton = page.locator("//button[@onclick='myDesk()']");
 		alertButton.click();
 		Thread.sleep(3000);
 	}

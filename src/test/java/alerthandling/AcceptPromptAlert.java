@@ -14,7 +14,7 @@ import com.microsoft.playwright.Playwright;
 
 
 public class AcceptPromptAlert {
-	protected static String url = "https://demoqa.com/alerts";
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/alerts.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -58,7 +58,7 @@ public class AcceptPromptAlert {
 				System.out.println("Accepted Prompt with Text.");
 			}
 		});
-		ElementHandle element = page.querySelector("#promtButton");
+		ElementHandle element = page.querySelector("//button[@onclick='myPromp()']");
 		element.click();
 		Thread.sleep(2000);
 	}
