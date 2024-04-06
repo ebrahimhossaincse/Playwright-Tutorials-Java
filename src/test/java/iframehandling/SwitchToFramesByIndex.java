@@ -1,16 +1,19 @@
-package browserhanding;
+package iframehandling;
 
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.ElementHandle;
+import com.microsoft.playwright.Frame;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class ChromeBrowser {
-	protected static String url = "https://www.testingtherapy.com/";
+public class SwitchToFramesByIndex {
+	protected static String url = "https://www.tutorialspoint.com/selenium/practice/nestedframes.php";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -24,15 +27,22 @@ public class ChromeBrowser {
 		browserType = playwright.chromium();
 		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
 		context = browser.newContext(new Browser.NewContextOptions());
-		
+
 		page = browser.newPage();
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
-	@Test
+	@BeforeClass
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
-		Thread.sleep(5000);
+		page.waitForLoadState();
+	}
+
+	@Test
+	public void idendtifyIFramesByIndex() {
+		Frame iframe = page.frames().get(0);
+		ElementHandle text = iframe.querySelector("//*[text()='Selenium - Automation Practice Form']");
+		System.out.println(text.textContent());
 	}
 
 	@AfterSuite
@@ -41,5 +51,4 @@ public class ChromeBrowser {
 		browser.close();
 		playwright.close();
 	}
-
 }
