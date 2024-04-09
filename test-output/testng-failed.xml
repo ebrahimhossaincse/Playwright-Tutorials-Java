@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="iframehandling.SwitchToFramesByWebElement">
+      <class name="alerthandling.GetTextOfPromptAlert">
         <methods>
-          <include name="startChromeBrowser"/>
-          <include name="idendtifyIFramesByWebElement"/>
           <include name="closeChromeBrowser"/>
+          <include name="getTextOfAlert"/>
+          <include name="startChromeBrowser"/>
           <include name="openUrl"/>
         </methods>
-      </class> <!-- iframehandling.SwitchToFramesByWebElement -->
+      </class> <!-- alerthandling.GetTextOfPromptAlert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

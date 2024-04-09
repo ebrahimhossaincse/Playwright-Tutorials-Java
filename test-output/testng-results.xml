@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-05T17:29:35 EDT" name="Default suite" finished-at="2024-04-05T17:29:38 EDT" duration-ms="3459">
+  <suite started-at="2024-04-09T10:09:38 EDT" name="Default suite" finished-at="2024-04-09T10:09:48 EDT" duration-ms="10093">
     <groups>
     </groups>
-    <test started-at="2024-04-05T17:29:35 EDT" name="Default test" finished-at="2024-04-05T17:29:38 EDT" duration-ms="3459">
-      <class name="iframehandling.SwitchToFramesByWebElement">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:iframehandling.SwitchToFramesByWebElement@1151e434]" started-at="2024-04-05T17:29:29 EDT" name="startChromeBrowser" finished-at="2024-04-05T17:29:35 EDT" duration-ms="5750" status="PASS">
+    <test started-at="2024-04-09T10:09:38 EDT" name="Default test" finished-at="2024-04-09T10:09:48 EDT" duration-ms="10093">
+      <class name="alerthandling.GetTextOfPromptAlert">
+        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:alerthandling.GetTextOfPromptAlert@4c1909a3]" started-at="2024-04-09T10:09:31 EDT" name="startChromeBrowser" finished-at="2024-04-09T10:09:38 EDT" duration-ms="6846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:iframehandling.SwitchToFramesByWebElement@1151e434]" started-at="2024-04-05T17:29:35 EDT" name="openUrl" finished-at="2024-04-05T17:29:38 EDT" duration-ms="3313" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:alerthandling.GetTextOfPromptAlert@4c1909a3]" started-at="2024-04-09T10:09:38 EDT" name="openUrl" finished-at="2024-04-09T10:09:41 EDT" duration-ms="2759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="idendtifyIFramesByWebElement()[pri:0, instance:iframehandling.SwitchToFramesByWebElement@1151e434]" started-at="2024-04-05T17:29:38 EDT" name="idendtifyIFramesByWebElement" finished-at="2024-04-05T17:29:38 EDT" duration-ms="74" status="PASS">
+        <test-method signature="getTextOfAlert()[pri:0, instance:alerthandling.GetTextOfPromptAlert@4c1909a3]" started-at="2024-04-09T10:09:41 EDT" name="getTextOfAlert" finished-at="2024-04-09T10:09:48 EDT" duration-ms="7260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- idendtifyIFramesByWebElement -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:iframehandling.SwitchToFramesByWebElement@1151e434]" started-at="2024-04-05T17:29:38 EDT" name="closeChromeBrowser" finished-at="2024-04-05T17:29:39 EDT" duration-ms="386" status="PASS">
+        </test-method> <!-- getTextOfAlert -->
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:alerthandling.GetTextOfPromptAlert@4c1909a3]" started-at="2024-04-09T10:09:48 EDT" name="closeChromeBrowser" finished-at="2024-04-09T10:09:49 EDT" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- iframehandling.SwitchToFramesByWebElement -->
+      </class> <!-- alerthandling.GetTextOfPromptAlert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
