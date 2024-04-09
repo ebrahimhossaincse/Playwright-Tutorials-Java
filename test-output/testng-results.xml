@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-09T18:43:07 EDT" name="Default suite" finished-at="2024-04-09T18:43:14 EDT" duration-ms="6994">
+  <suite started-at="2024-04-09T19:03:31 EDT" name="Default suite" finished-at="2024-04-09T19:03:43 EDT" duration-ms="11578">
     <groups>
     </groups>
-    <test started-at="2024-04-09T18:43:07 EDT" name="Default test" finished-at="2024-04-09T18:43:14 EDT" duration-ms="6994">
-      <class name="formwebelementcommands.ClickMethod">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:formwebelementcommands.ClickMethod@1151e434]" started-at="2024-04-09T18:42:59 EDT" name="startChromeBrowser" finished-at="2024-04-09T18:43:07 EDT" duration-ms="7295" status="PASS">
+    <test started-at="2024-04-09T19:03:31 EDT" name="Default test" finished-at="2024-04-09T19:03:43 EDT" duration-ms="11578">
+      <class name="headlessbrowserhandle.HeadlessChromeBrowserInSelenium">
+        <test-method is-config="true" signature="startChromeBrowserInHeadlessMode()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInSelenium@4b8ee4de]" started-at="2024-04-09T19:03:24 EDT" name="startChromeBrowserInHeadlessMode" finished-at="2024-04-09T19:03:31 EDT" duration-ms="6880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startChromeBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:formwebelementcommands.ClickMethod@1151e434]" started-at="2024-04-09T18:43:07 EDT" name="openUrl" finished-at="2024-04-09T18:43:08 EDT" duration-ms="1681" status="PASS">
+        </test-method> <!-- startChromeBrowserInHeadlessMode -->
+        <test-method signature="openUrl()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInSelenium@4b8ee4de]" started-at="2024-04-09T19:03:31 EDT" name="openUrl" finished-at="2024-04-09T19:03:43 EDT" duration-ms="11548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="clickMethod()[pri:0, instance:formwebelementcommands.ClickMethod@1151e434]" started-at="2024-04-09T18:43:08 EDT" name="clickMethod" finished-at="2024-04-09T18:43:14 EDT" duration-ms="5191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickMethod -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:formwebelementcommands.ClickMethod@1151e434]" started-at="2024-04-09T18:43:14 EDT" name="closeChromeBrowser" finished-at="2024-04-09T18:43:14 EDT" duration-ms="393" status="PASS">
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInSelenium@4b8ee4de]" started-at="2024-04-09T19:03:43 EDT" name="closeChromeBrowser" finished-at="2024-04-09T19:03:43 EDT" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- formwebelementcommands.ClickMethod -->
+      </class> <!-- headlessbrowserhandle.HeadlessChromeBrowserInSelenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,38 +1,48 @@
 package headlessbrowserhandle;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
 
 public class HeadlessEdgeBrowserInSelenium {
 	protected static String url = "https://www.testingtherapy.com/";
-	WebDriver driver;
 
+	Playwright playwright;
+	BrowserType browserType;
+	protected Browser browser;
+	protected BrowserContext context;
+	protected Page page;
+	
+	
 	@BeforeSuite
-	public void startHeadlessEdgeBrowser() {
-		WebDriverManager.chromedriver().setup();
+	public void startEdgeBrowserInHeadLessMode() {
+		playwright = Playwright.create();
+		browserType = playwright.webkit();
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
+		context = browser.newContext(new Browser.NewContextOptions());
 		
-		// Create an object of Edge Options class
-        EdgeOptions edgeOptions = new EdgeOptions();
- 
-        // Set Edge Headless mode as TRUE
-        edgeOptions.addArguments("--headless");
-        
-		driver = new EdgeDriver();
+		page = browser.newPage();
+		System.out.println("**** Chrome Browser Version is : " + browser.version());
+	
 	}
 	
 	@Test
-	public void openUrl() {
-		driver.get(url);
+	public void openUrl() throws InterruptedException {
+		page.navigate(url);
+		Thread.sleep(3000);
 	}
-	
+
 	@AfterSuite
-	public void closeEdgeBrowser() {
-		driver.quit();
+	public void closeChromeBrowser() {
+		page.close();
+		browser.close();
+		playwright.close();
 	}
 
 }

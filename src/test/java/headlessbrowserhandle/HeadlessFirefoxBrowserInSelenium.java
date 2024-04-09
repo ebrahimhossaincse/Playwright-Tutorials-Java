@@ -1,38 +1,45 @@
 package headlessbrowserhandle;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
 
 public class HeadlessFirefoxBrowserInSelenium {
 	protected static String url = "https://www.testingtherapy.com/";
-	WebDriver driver;
+
+	Playwright playwright;
+	BrowserType browserType;
+	protected Browser browser;
+	protected BrowserContext context;
+	protected Page page;
 
 	@BeforeSuite
-	public void startHeadlessFirefoxBrowser() {
-		WebDriverManager.chromedriver().setup();
-		
-		// Create an object of Firefox Options class
-        FirefoxOptions options = new FirefoxOptions();
- 
-        // Set Firefox Headless mode as TRUE
-        options.addArguments("-headless");
-		
-		driver = new FirefoxDriver();
+	public void startFirefoxBrowserInHeadlessMode() {
+		playwright = Playwright.create();
+		browserType = playwright.firefox();
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
+		context = browser.newContext(new Browser.NewContextOptions());
+
+		page = browser.newPage();
+		System.out.println("**** Chrome Browser Version is : " + browser.version());
+
 	}
-	
+
 	@Test
 	public void openUrl() {
-		driver.get(url);
+		page.navigate(url);
 	}
-	
+
 	@AfterSuite
-	public void closeFirefoxBrowser() {
-		driver.quit();
+	public void closeChromeBrowser() {
+		page.close();
+		browser.close();
+		playwright.close();
 	}
 
 }
