@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dropdownhandling.ListOfAllDropdownOption">
+      <class name="formwebelementcommands.ClickMethod">
         <methods>
-          <include name="openUrl"/>
-          <include name="selectByVisibleText"/>
-          <include name="closeChromeBrowser"/>
           <include name="startChromeBrowser"/>
+          <include name="closeChromeBrowser"/>
+          <include name="openUrl"/>
+          <include name="clickMethod"/>
         </methods>
-      </class> <!-- dropdownhandling.ListOfAllDropdownOption -->
+      </class> <!-- formwebelementcommands.ClickMethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
