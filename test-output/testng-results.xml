@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-10T13:24:16 EDT" name="Default suite" finished-at="2024-04-10T13:24:25 EDT" duration-ms="9032">
+  <suite started-at="2024-04-10T23:10:22 EDT" name="Default suite" finished-at="2024-04-10T23:10:36 EDT" duration-ms="14693">
     <groups>
     </groups>
-    <test started-at="2024-04-10T13:24:16 EDT" name="Default test" finished-at="2024-04-10T13:24:25 EDT" duration-ms="9032">
+    <test started-at="2024-04-10T23:10:22 EDT" name="Default test" finished-at="2024-04-10T23:10:36 EDT" duration-ms="14693">
       <class name="tabhandling.SwitchingOneTabToAnother">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@1151e434]" started-at="2024-04-10T13:24:12 EDT" name="startChromeBrowser" finished-at="2024-04-10T13:24:16 EDT" duration-ms="4090" status="PASS">
+        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@4b8ee4de]" started-at="2024-04-10T23:10:18 EDT" name="startChromeBrowser" finished-at="2024-04-10T23:10:22 EDT" duration-ms="4024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@1151e434]" started-at="2024-04-10T13:24:16 EDT" name="openUrl" finished-at="2024-04-10T13:24:18 EDT" duration-ms="1650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="switchingTab()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@1151e434]" started-at="2024-04-10T13:24:18 EDT" name="switchingTab" finished-at="2024-04-10T13:24:25 EDT" duration-ms="7321" status="PASS">
+        <test-method signature="switchingTab()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@4b8ee4de]" started-at="2024-04-10T23:10:22 EDT" name="switchingTab" finished-at="2024-04-10T23:10:36 EDT" duration-ms="14631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- switchingTab -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@1151e434]" started-at="2024-04-10T13:24:25 EDT" name="closeChromeBrowser" finished-at="2024-04-10T13:24:25 EDT" duration-ms="344" status="PASS">
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:tabhandling.SwitchingOneTabToAnother@4b8ee4de]" started-at="2024-04-10T23:10:36 EDT" name="closeChromeBrowser" finished-at="2024-04-10T23:10:37 EDT" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->

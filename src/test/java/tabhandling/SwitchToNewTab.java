@@ -1,7 +1,6 @@
 package tabhandling;
 
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import com.microsoft.playwright.Browser;
@@ -29,18 +28,16 @@ public class SwitchToNewTab {
 		page = browser.newPage();
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
-
-	@BeforeClass
-	public void openUrl() throws InterruptedException {
-		page.navigate(url);
-		page.waitForLoadState();
-	}
 	
 	@Test
 	public void switchToTab() throws InterruptedException {
-		Page newTab = context.newPage();
-		newTab.navigate("https://www.testingtherapy.com/");
-		newTab.bringToFront();
+		Page firstTab = context.newPage();
+		firstTab.navigate("https://www.testingtherapy.com/");
+		Thread.sleep(3000);
+		
+		Page secondTab = context.newPage();
+		secondTab.bringToFront();
+		secondTab.navigate("https://www.google.com/");
 		Thread.sleep(3000);
 	}
 

@@ -1,16 +1,26 @@
-package tabhandling;
+package windowhandling;
 
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class CountTheTabs {
-	protected static String url = "https://www.tutorialspoint.com/selenium/practice/menu.php#";
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class CountTheWindows {
+
+	protected static String url = "https://demoqa.com/browser-windows";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -29,20 +39,18 @@ public class CountTheTabs {
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
+	@BeforeClass
+	public void openUrl() throws InterruptedException {
+		page.navigate(url);
+		page.waitForLoadState();
+	}
+	
 	@Test
-	public void countTab() throws InterruptedException {
-		Page firstTab = context.newPage();
-		firstTab.navigate("https://www.testingtherapy.com/");
-		Thread.sleep(3000);
-
-		Page secondTab = context.newPage();
-		secondTab.bringToFront();
-		secondTab.navigate("https://www.google.com/");
-		Thread.sleep(3000);
-
-		int totalTabs = context.pages().size();
-		System.out.println("Total Tab Number: " + totalTabs);
-
+	public void countWindows() throws InterruptedException {
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		Thread.sleep(5000);
+		Set<String> windows = driver.getWindowHandles();
+		System.out.println("Total Tab Number: "+windows.size());
 	}
 
 	@AfterSuite
