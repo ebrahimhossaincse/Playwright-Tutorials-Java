@@ -10,9 +10,6 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class CreateNewTab {
-
-	protected static String url = "https://www.tutorialspoint.com/selenium/practice/menu.php#";
-
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;

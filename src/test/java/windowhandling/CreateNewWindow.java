@@ -1,40 +1,47 @@
 package windowhandling;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WindowType;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
 
 public class CreateNewWindow {
-
-	protected static String url = "https://demoqa.com/browser-windows";
-	WebDriver driver;
+	Playwright playwright;
+	BrowserType browserType;
+	protected Browser browser;
+	protected BrowserContext context;
+	protected Page page;
 
 	@BeforeSuite
 	public void startChromeBrowser() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-	}
+		playwright = Playwright.create();
+		browserType = playwright.chromium();
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
+		context = browser.newContext(new Browser.NewContextOptions());
 
-	@BeforeClass
-	public void openUrl() {
-		driver.get(url);
+		page = browser.newPage();
+		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
 	@Test
 	public void createNewWindow() throws InterruptedException {
-		driver.switchTo().newWindow(WindowType.WINDOW);
-		Thread.sleep(5000);
+		page.navigate("https://www.testingtherapy.com/");
+		Thread.sleep(3000);
+		
+		Page secondTab = browser.newContext().newPage();
+		secondTab.bringToFront();
+		secondTab.navigate("https://www.google.com/");
+		Thread.sleep(3000);
 	}
 
 	@AfterSuite
 	public void closeChromeBrowser() {
-		driver.quit();
+		page.close();
+		browser.close();
+		playwright.close();
 	}
 }

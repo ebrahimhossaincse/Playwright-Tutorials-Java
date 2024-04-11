@@ -1,62 +1,47 @@
 package windowhandling;
 
-import java.util.Iterator;
-import java.util.Set;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
 
 public class SwitchToNewWindow {
-
-	protected static String url = "https://demoqa.com/browser-windows";
-	WebDriver driver;
+	Playwright playwright;
+	BrowserType browserType;
+	protected Browser browser;
+	protected BrowserContext context;
+	protected Page page;
 
 	@BeforeSuite
 	public void startChromeBrowser() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		playwright = Playwright.create();
+		browserType = playwright.chromium();
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
+		context = browser.newContext(new Browser.NewContextOptions());
+
+		page = browser.newPage();
+		System.out.println("**** Chrome Browser Version is : " + browser.version());
 	}
 
-	@BeforeClass
-	public void openUrl() {
-		driver.get(url);
-	}
-	
-	@SuppressWarnings("unused")
 	@Test
 	public void switchToWindow() throws InterruptedException {
-		Set<String> allWindowHandles = driver.getWindowHandles();
-		System.out.println("Count of Window :" + allWindowHandles.size());
-
-		driver.findElement(By.id("windowButton")).click();
-
-		Set<String> newAllWindowHandles = driver.getWindowHandles();
-		System.out.println("New Count of Window :" + newAllWindowHandles.size());
-
-		String ParentHandle = driver.getWindowHandle();
-
-		Iterator<String> iterator = newAllWindowHandles.iterator();
-		String mainWindow = iterator.next();
-		String childWindow = iterator.next();
-
-		driver.switchTo().window(childWindow);
+		page.navigate("https://www.testingtherapy.com/");
 		Thread.sleep(3000);
-		
-		WebElement text = driver.findElement(By.id("sampleHeading"));
-        System.out.println("Child_Title :" + text.getText());
-        Thread.sleep(5000);
+
+		Page secondTab = browser.newContext().newPage();
+		secondTab.bringToFront();
+		secondTab.navigate("https://www.google.com/");
+		Thread.sleep(3000);
 	}
 
 	@AfterSuite
 	public void closeChromeBrowser() {
-		driver.quit();
+		page.close();
+		browser.close();
+		playwright.close();
 	}
 }
