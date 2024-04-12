@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tabhandling.CountTheTabs">
+      <class name="webtablehandling.NumberOfRowsAndColumns">
         <methods>
+          <include name="fetchNumberOfRowsAndColumns"/>
           <include name="closeChromeBrowser"/>
-          <include name="countTab"/>
-          <include name="startChromeBrowser"/>
           <include name="openUrl"/>
+          <include name="startChromeBrowser"/>
         </methods>
-      </class> <!-- tabhandling.CountTheTabs -->
+      </class> <!-- webtablehandling.NumberOfRowsAndColumns -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
