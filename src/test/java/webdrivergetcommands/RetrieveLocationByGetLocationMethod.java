@@ -1,20 +1,21 @@
-package webtablehandling;
+package webdrivergetcommands;
 
-import java.util.List;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.options.BoundingBox;
 
-public class FetchTableHeading {
-	protected static String url = "https://demo.guru99.com/test/web-table-element.php";
+public class RetrieveLocationByGetLocationMethod {
 
+	String url = "https://selenium08.blogspot.com/2020/01/drag-me.html";
 	Playwright playwright;
 	BrowserType browserType;
 	protected Browser browser;
@@ -39,18 +40,26 @@ public class FetchTableHeading {
 	}
 
 	@Test(priority = 0)
-	public void fetchHeading() throws InterruptedException {
-		ElementHandle tableElement = page.querySelector("//table[@class='dataTable']/thead");
-		List<ElementHandle> rows = tableElement.querySelectorAll("tr");
+	public void fetchLocation() throws InterruptedException {
+		ElementHandle srcElement = page.querySelector("#draggable");
 
-		for (ElementHandle rowElement : rows) {
-			List<ElementHandle> cells = rowElement.querySelectorAll("th");
-			for (ElementHandle cellElement : cells) {
-				String cellData = cellElement.textContent();
-				System.out.print("| " + cellData + " |\t");
+		if (srcElement != null) {
+			BoundingBox srcBoundingBox = srcElement.boundingBox();
+			if (srcBoundingBox != null) {
+				int srcCenterX = (int) (srcBoundingBox.x);
+				int srcCenterY = (int) (srcBoundingBox.y);
+
+				System.out.println("Element coordinates:");
+				System.out.println("X: " + srcCenterX);
+				System.out.println("Y: " + srcCenterY);
+			} else {
+				System.out.println("Bounding box not available.");
 			}
-			System.out.println();
+		} else {
+			System.out.println("Element not found.");
 		}
+
+		Thread.sleep(3000);
 	}
 
 	@AfterSuite

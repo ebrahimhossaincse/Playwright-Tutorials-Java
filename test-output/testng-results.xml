@@ -2,24 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-11T09:59:29 EDT" name="Default suite" finished-at="2024-04-11T09:59:46 EDT" duration-ms="16641">
+  <suite started-at="2024-04-11T21:46:43 EDT" name="Default suite" finished-at="2024-04-11T21:46:53 EDT" duration-ms="10609">
     <groups>
     </groups>
-    <test started-at="2024-04-11T09:59:29 EDT" name="Default test" finished-at="2024-04-11T09:59:46 EDT" duration-ms="16641">
-      <class name="windowhandling.SwitchingOneWindowToAnother">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:windowhandling.SwitchingOneWindowToAnother@4b8ee4de]" started-at="2024-04-11T09:59:19 EDT" name="startChromeBrowser" finished-at="2024-04-11T09:59:29 EDT" duration-ms="9561" status="PASS">
+    <test started-at="2024-04-11T21:46:43 EDT" name="Default test" finished-at="2024-04-11T21:46:53 EDT" duration-ms="10609">
+      <class name="webtablehandling.FetchTableColumnValue">
+        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:webtablehandling.FetchTableColumnValue@1151e434]" started-at="2024-04-11T21:46:38 EDT" name="startChromeBrowser" finished-at="2024-04-11T21:46:43 EDT" duration-ms="4242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeBrowser -->
-        <test-method signature="switchingWindow()[pri:0, instance:windowhandling.SwitchingOneWindowToAnother@4b8ee4de]" started-at="2024-04-11T09:59:29 EDT" name="switchingWindow" finished-at="2024-04-11T09:59:46 EDT" duration-ms="16582" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:webtablehandling.FetchTableColumnValue@1151e434]" started-at="2024-04-11T21:46:43 EDT" name="openUrl" finished-at="2024-04-11T21:46:48 EDT" duration-ms="4809" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- switchingWindow -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:windowhandling.SwitchingOneWindowToAnother@4b8ee4de]" started-at="2024-04-11T09:59:46 EDT" name="closeChromeBrowser" finished-at="2024-04-11T09:59:46 EDT" duration-ms="562" status="PASS">
+        </test-method> <!-- openUrl -->
+        <test-method signature="fetchTableColumnValue()[pri:0, instance:webtablehandling.FetchTableColumnValue@1151e434]" started-at="2024-04-11T21:46:48 EDT" name="fetchTableColumnValue" finished-at="2024-04-11T21:46:53 EDT" duration-ms="5716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchTableColumnValue -->
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:webtablehandling.FetchTableColumnValue@1151e434]" started-at="2024-04-11T21:46:53 EDT" name="closeChromeBrowser" finished-at="2024-04-11T21:46:54 EDT" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- windowhandling.SwitchingOneWindowToAnother -->
+      </class> <!-- webtablehandling.FetchTableColumnValue -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
