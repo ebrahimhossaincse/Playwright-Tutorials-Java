@@ -229,7 +229,7 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 11 - 07 [Right Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/RightClick.java)
 
 ### 12 - Keyboard Events In Selenium
-- 12 - 00 [Keyboard Events](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/keyboardevents/KeyboardEvents.java)
+- 12 - 00 [Keyboard Events](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/keyboardevents/KeyboardEvents.java)
 
 ### 13 - Browser Tab
 - 13 - 00 [Create New Tab](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/tabhandling/CreateNewTab.java)
