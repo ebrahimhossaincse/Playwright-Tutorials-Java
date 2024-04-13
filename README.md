@@ -205,13 +205,13 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 08 - 04 [DeSelect By Index](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/dropdownhandling/DeselectByIndex.java)
 
 ### 09 - Alerts in Selenium
-- 09 - 00 [Accept Simple Alert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptSimpleAlert.java)
-- 09 - 01 [Accept ConfirmA lert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptConfirmAlert.java)
-- 09 - 02 [Accept Prompt Alert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptPromptAlert.java)
-- 09 - 03 [Fetch Text Of Prompt Alert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/GetTextOfPromptAlert.java)
-- 09 - 04 [Send Text In Prompt Alert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/SendTextPromptAlert.java)
-- 09 - 05 [Reject Confirm Alert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/DismissConfirmAlert.java)
-- 09 - 06 [Reject Prompt Alert](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/alerthandling/DismissPromptAlert.java)
+- 09 - 00 [Accept Simple Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptSimpleAlert.java)
+- 09 - 01 [Accept Confirm Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptConfirmAlert.java)
+- 09 - 02 [Accept Prompt Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptPromptAlert.java)
+- 09 - 03 [Fetch Text Of Prompt Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/GetTextOfPromptAlert.java)
+- 09 - 04 [Send Text In Prompt Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/SendTextPromptAlert.java)
+- 09 - 05 [Reject Confirm Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/DismissConfirmAlert.java)
+- 09 - 06 [Reject Prompt Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/DismissPromptAlert.java)
 
 ### 10 - Form WebElement Commands
 - 10 - 00 [Sendkeys](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SendKeysMethod.java)
