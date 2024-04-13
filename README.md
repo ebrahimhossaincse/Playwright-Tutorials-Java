@@ -21,20 +21,20 @@
 
     - [Launching Browsers](#00---launching-browsers)
     - [Launching Browsers In Headless Mode](#01---launching-browsers-in-headless-mode)
-    - [Locators in Selenium](#02---locators-in-selenium)
+    - [Locators](#02---locators)
     - [WebDriver Browser Commands](#03---webdriver-browser-commands)
     - [WebDriver Navigation Commands](#04---webdriver-navigation-commands)
-    - [Waits in Selenium](#05---waits-in-selenium)
-    - [Automate Radio Button in Selenium](#06---automate-radio-button)
-    - [Automate Checkbox in Selenium](#07---automate-checkbox)
-    - [DropDown in Selenium](#08---dropdown-in-selenium)
-    - [Alerts in Selenium](#09---alerts)
+    - [Waits](#05---waits)
+    - [Automate Radio Button](#06---automate-radio-button)
+    - [Automate Checkbox](#07---automate-checkbox)
+    - [DropDown](#08---dropdown)
+    - [Alerts](#09---alerts)
     - [Form WebElement Commands](#10---form-webelement-commands)
-    - [Mouse Events In Selenium](#11---mouse-events)
-    - [Keyboard Events In Selenium](#12---keyboard-events)
+    - [Mouse Events](#11---mouse-events)
+    - [Keyboard Events](#12---keyboard-events)
     - [Browser Tab](#13---browser-tab)
     - [Browser Window](#14---browser-window)
-    - [Frame In Selenium](#15---frame)
+    - [Frame](#15---frame)
     - [Assertion](#16---assertion)
     - [Web Table](#16---web-table)
     
@@ -142,7 +142,7 @@ git clone https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java.git
 - 00 - 01 [How to run Playwright Tests using Firefox?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/FirefoxBrowserInSelenium.java)
 - 00 - 02 [How to run Playwright Tests using Edge?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/EdgeBrowserInSelenium.java)
 - 00 - 03 [How to run Playwright Tests using Safari?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/SafariBrowserInSelenium.java)
-- 00 - 04 [How to Configure cross browser in Selenium?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/CrossBrowserConfiguration.java)
+- 00 - 04 [How to Configure cross browser in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/CrossBrowserConfiguration.java)
 
 ### 01 - Launching Browsers In Headless Mode
 - 01 - 00 [How to run Chrome tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessChromeBrowserInSelenium.java)
@@ -234,8 +234,8 @@ git clone https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java.git
 ### 13 - Browser Tab
 - 13 - 00 [Create New Tab](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/tabhandling/CreateNewTab.java)
 - 13 - 01 [Count The Tabs](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/tabhandling/CountTheTabs.java)
-- 13 - 02 [Switch To New Tab](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/tabhandling/SwitchToNewTab.java)
-- 13 - 03 [Switching One Tab To Another](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/tabhandling/SwitchingOneTabToAnother.java)
+- 13 - 02 [Switch To New Tab](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/tabhandling/SwitchToNewTab.java)
+- 13 - 03 [Switching One Tab To Another](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/tabhandling/SwitchingOneTabToAnother.java)
 
 ### 14 - Browser Window
 - 14 - 00 [Create New Window](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/windowhandling/CreateNewWindow.java)
@@ -266,10 +266,10 @@ git clone https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java.git
 - 17 - 03 [Get Maximum Price In Column](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webtablehandling/GetMaximumPriceInColumn.java)
 
 ### Acknowledgments
-Special thanks to the contributors and the Selenium community for their valuable resources and tutorials.
+Special thanks to the contributors and the Playwright community for their valuable resources and tutorials.
 
 ### Contact
 For questions or feedback, please feel free to reach out:
 
 1. Maintainer: [Md. Ebrahim Hossain](https://github.com/ebrahimhossaincse)
-2. Project Link:[Selenium-Tutorials-Java](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java) 
+2. Project Link:[Playwright-Tutorials-Java](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java) 
