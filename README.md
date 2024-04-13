@@ -139,15 +139,15 @@ git clone https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java.git
 
 ### 00 - Launching Browsers
 - 00 - 00 [How to run Playwright Tests using Chrome?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/ChromeBrowser.java) 
-- 00 - 01 [How to run Playwright Tests using Firefox?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/FirefoxBrowserInSelenium.java)
-- 00 - 02 [How to run Playwright Tests using Edge?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/EdgeBrowserInSelenium.java)
-- 00 - 03 [How to run Playwright Tests using Safari?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/SafariBrowserInSelenium.java)
+- 00 - 01 [How to run Playwright Tests using Firefox?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/FirefoxBrowserInPlaywright.java)
+- 00 - 02 [How to run Playwright Tests using Edge?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/EdgeBrowserInPlaywright.java)
+- 00 - 03 [How to run Playwright Tests using Safari?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/SafariBrowserInPlaywright.java)
 - 00 - 04 [How to Configure cross browser in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/browserhanding/CrossBrowserConfiguration.java)
 
 ### 01 - Launching Browsers In Headless Mode
-- 01 - 00 [How to run Chrome tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessChromeBrowserInSelenium.java)
-- 01 - 01 [How to run Firefox tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessFirefoxBrowserInSelenium.java)
-- 01 - 02 [How to run Edge tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessEdgeBrowserInSelenium.java)
+- 01 - 00 [How to run Chrome tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessChromeBrowserInPlaywright.java)
+- 01 - 01 [How to run Firefox tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessFirefoxBrowserInPlaywright.java)
+- 01 - 02 [How to run Edge tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessEdgeBrowserInPlaywright.java)
 
 ### 02 - Locators
 - 02 - 00 [Locate by ID](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/locators/LocateByIDAttribute.java)
