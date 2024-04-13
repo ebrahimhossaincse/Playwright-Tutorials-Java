@@ -3,14 +3,13 @@ package browserhanding;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class FirefoxBrowserInSelenium {
+public class EdgeBrowserInPlaywright {
 	protected static String url = "https://www.testingtherapy.com/";
 
 	Playwright playwright;
@@ -23,7 +22,7 @@ public class FirefoxBrowserInSelenium {
 	@BeforeSuite
 	public void startFirefoxBrowser() {
 		playwright = Playwright.create();
-		browserType = playwright.firefox();
+		browserType = playwright.webkit();
 		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
 		context = browser.newContext(new Browser.NewContextOptions());
 		
@@ -33,8 +32,9 @@ public class FirefoxBrowserInSelenium {
 	}
 	
 	@Test
-	public void openUrl() {
+	public void openUrl() throws InterruptedException {
 		page.navigate(url);
+		Thread.sleep(3000);
 	}
 
 	@AfterSuite

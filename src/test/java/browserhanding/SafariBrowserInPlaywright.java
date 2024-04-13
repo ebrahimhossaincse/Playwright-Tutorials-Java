@@ -1,16 +1,15 @@
-package headlessbrowserhandle;
+package browserhanding;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class HeadlessEdgeBrowserInSelenium {
+public class SafariBrowserInPlaywright {
 	protected static String url = "https://www.testingtherapy.com/";
 
 	Playwright playwright;
@@ -18,20 +17,18 @@ public class HeadlessEdgeBrowserInSelenium {
 	protected Browser browser;
 	protected BrowserContext context;
 	protected Page page;
-	
-	
+
 	@BeforeSuite
-	public void startEdgeBrowserInHeadLessMode() {
+	public void startFirefoxBrowser() {
 		playwright = Playwright.create();
 		browserType = playwright.webkit();
-		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
 		context = browser.newContext(new Browser.NewContextOptions());
-		
+
 		page = browser.newPage();
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
-	
 	}
-	
+
 	@Test
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
@@ -44,5 +41,4 @@ public class HeadlessEdgeBrowserInSelenium {
 		browser.close();
 		playwright.close();
 	}
-
 }

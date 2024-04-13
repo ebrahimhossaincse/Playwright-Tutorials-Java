@@ -9,7 +9,7 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class HeadlessFirefoxBrowserInSelenium {
+public class HeadlessChromeBrowserInPlaywright {
 	protected static String url = "https://www.testingtherapy.com/";
 
 	Playwright playwright;
@@ -19,20 +19,20 @@ public class HeadlessFirefoxBrowserInSelenium {
 	protected Page page;
 
 	@BeforeSuite
-	public void startFirefoxBrowserInHeadlessMode() {
+	public void startChromeBrowserInHeadlessMode() {
 		playwright = Playwright.create();
-		browserType = playwright.firefox();
+		browserType = playwright.chromium();
 		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
 		context = browser.newContext(new Browser.NewContextOptions());
-
+		
 		page = browser.newPage();
 		System.out.println("**** Chrome Browser Version is : " + browser.version());
-
 	}
 
 	@Test
-	public void openUrl() {
+	public void openUrl() throws InterruptedException {
 		page.navigate(url);
+		Thread.sleep(5000);
 	}
 
 	@AfterSuite
