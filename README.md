@@ -220,14 +220,13 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 10 - 03 [Submit](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SubmitMethod.java)
 
 ### 11 - Mouse Events In Selenium
-- 11 - 00 [Click](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/Click.java)
-- 11 - 01 [Click And Hold](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/ClickAndHold.java)
-- 11 - 02 [Double Click](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/DoubleClick.java)
-- 11 - 03 [Drag And Drop](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/DragAndDrop.java)
-- 11 - 04 [Drag And Drop By Offset](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/DragAndDropByOffset.java)
-- 11 - 05 [Move By Offset](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/MoveByOffset.java)
-- 11 - 06 [Move To Element](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/MoveToElement.java)
-- 11 - 07 [Right Click](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/RightClick.java)
+- 11 - 00 [Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/Click.java)
+- 11 - 01 [Click And Hold](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/ClickAndHold.java)
+- 11 - 02 [Double Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/DoubleClick.java)
+- 11 - 03 [Drag And Drop](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/DragAndDrop.java)
+- 11 - 04 [Drag And Drop By Offset](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/DragAndDropByOffset.java)
+- 11 - 06 [Move To Element](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/Hover.java)
+- 11 - 07 [Right Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/RightClick.java)
 
 ### 12 - Keyboard Events In Selenium
 - 12 - 00 [Keyboard Events](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/keyboardevents/KeyboardEvents.java)
