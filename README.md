@@ -260,10 +260,10 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 16 - 05 [Soft Assertion](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/assertions/SoftAssertion.java)
 
 ### 17 - Web Table
-- 17 - 00 [Fetch Table Heading](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/webtablehandling/FetchTableHeading.java)
-- 17 - 01 [Count Number Of Rows And Columns](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/webtablehandling/NumberOfRowsAndColumns.java)
-- 17 - 02 [Fetch Cell Value Of Particular Row And Column](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/webtablehandling/FetchCellValueOfParticularRowAndColumn.java)
-- 17 - 03 [Get Maximum Price In Column](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/webtablehandling/GetMaximumPriceInColumn.java)
+- 17 - 00 [Fetch Table Heading](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webtablehandling/FetchTableHeading.java)
+- 17 - 01 [Count Number Of Rows And Columns](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webtablehandling/NumberOfRowsAndColumns.java)
+- 17 - 02 [Fetch Cell Value Of Particular Row And Column](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webtablehandling/FetchCellValueOfParticularRowAndColumn.java)
+- 17 - 03 [Get Maximum Price In Column](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webtablehandling/GetMaximumPriceInColumn.java)
 
 ### Acknowledgments
 Special thanks to the contributors and the Selenium community for their valuable resources and tutorials.
