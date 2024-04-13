@@ -25,16 +25,16 @@
     - [WebDriver Browser Commands](#03---webdriver-browser-commands)
     - [WebDriver Navigation Commands](#04---webdriver-navigation-commands)
     - [Waits in Selenium](#05---waits-in-selenium)
-    - [Automate Radio Button in Selenium](#06---automate-radio-button-in-selenium)
-    - [Automate Checkbox in Selenium](#07---automate-checkbox-in-selenium)
+    - [Automate Radio Button in Selenium](#06---automate-radio-button)
+    - [Automate Checkbox in Selenium](#07---automate-checkbox)
     - [DropDown in Selenium](#08---dropdown-in-selenium)
-    - [Alerts in Selenium](#09---alerts-in-selenium)
+    - [Alerts in Selenium](#09---alerts)
     - [Form WebElement Commands](#10---form-webelement-commands)
-    - [Mouse Events In Selenium](#11---mouse-events-in-selenium)
-    - [Keyboard Events In Selenium](#12---keyboard-events-in-selenium)
+    - [Mouse Events In Selenium](#11---mouse-events)
+    - [Keyboard Events In Selenium](#12---keyboard-events)
     - [Browser Tab](#13---browser-tab)
     - [Browser Window](#14---browser-window)
-    - [Frame In Selenium](#15---frame-in-selenium)
+    - [Frame In Selenium](#15---frame)
     - [Assertion](#16---assertion)
     - [Web Table](#16---web-table)
     
@@ -42,10 +42,10 @@
 39. [Contact](#contact)
 
 ### Overview
-This repository serves as a comprehensive guide to working with Selenium WebDriver using Java. Whether you're a beginner looking to get started with Selenium for automated testing or an experienced developer seeking advanced browser handling techniques, this repository has something for everyone.
+This repository serves as a comprehensive guide to working with Playwright using Java. Whether you're a beginner looking to get started with Playwrigth for automated testing or an experienced developer seeking advanced browser handling techniques, this repository has something for everyone.
 
 ### Getting Started
-Follow these steps to set up your development environment and start using Selenium with Java
+Follow these steps to set up your development environment and start using Playwrigth with Java
 
 ### Prerequisites
 
@@ -104,17 +104,17 @@ Follow these steps to set up your development environment and start using Seleni
 ### Installation Steps
 To start using the framework:
 
-1. [Fork](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git) the repository.
+1. [Fork](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java.git) the repository.
 2. Clone, i.e, download your copy of the repository to your local machine using
 ```
-git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
+git clone https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java.git
 ```
 3. Import the project into your preferred IDE (Eclipse, IntelliJ IDEA, or Spring Tools).
 4. Make any desired changes or additions to the project.
 
 ##### Maven Dependencies
 
-###### Selenium TestNG Webdriver Manager
+###### Playwright TestNG
 
 ```xml
 <dependencies>
@@ -149,7 +149,7 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 01 - 01 [How to run Firefox tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessFirefoxBrowserInSelenium.java)
 - 01 - 02 [How to run Edge tests in headless mode in Playwright?](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/headlessbrowserhandle/HeadlessEdgeBrowserInSelenium.java)
 
-### 02 - Locators in Selenium
+### 02 - Locators
 - 02 - 00 [Locate by ID](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/locators/LocateByIDAttribute.java)
 - 02 - 01 [Locate by Name](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/locators/LocateByNameAttribute.java)
 - 02 - 02 [Locate by Class Name](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/locators/LocateByClassNameAttribute.java)
@@ -181,15 +181,15 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 04 - 02 [Back](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webdrivernavigationcommands/BackCommand.java)
 - 04 - 03 [Forward](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/webdrivernavigationcommands/ForwardCommand.java)
 
-### 05 - Waits in Selenium
+### 05 - Waits
 - 05 - 00 [Explicit](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/waits/ExplicitWait.java)
 - 05 - 01 [Implicit](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/waits/ImplicitWait.java)
 
-### 06 - Automate Radio Button in Selenium
+### 06 - Automate Radio Button
 - 06 - 00 [Single Radio Button Selection](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/radiobuttonhandling/SelectRadioButton.java)
 - 06 - 01 [Group Radio Button Selection](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/radiobuttonhandling/SelectRadioButtonDynamic.java)
 
-### 07 - Automate Checkbox in Selenium
+### 07 - Automate Checkbox
 - 07 - 00 [Select Checkbox By ID](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/checkboxhandling/SelectCheckboxByID.java)
 - 07 - 01 [Select Checkbox By XPath](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/checkboxhandling/SelectCheckboxByXPath.java)
 - 07 - 02 [Select Multiple Checkboxes](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/checkboxhandling/SelectMultiplesCheckbox.java)
@@ -197,14 +197,14 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 07 - 04 [Unselect Checkbox By XPath](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/checkboxhandling/UnselectCheckboxByXPath.java)
 - 07 - 05 [Unselect Multiple Checkboxes](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/checkboxhandling/UnselectMultiplesCheckbox.java)
 
-### 08 - DropDown in Selenium
+### 08 - DropDown
 - 08 - 00 [Select By Index](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/dropdownhandling/SelectByIndex.java)
 - 08 - 01 [Select By Value](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/dropdownhandling/SelectByValue.java)
 - 08 - 02 [Select By Visible Text](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/dropdownhandling/SelectByVisibleText.java)
 - 08 - 03 [Fetch List of options in dropdown](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/dropdownhandling/FetchAllOptions.java)
 - 08 - 04 [DeSelect By Index](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/dropdownhandling/DeselectByIndex.java)
 
-### 09 - Alerts in Selenium
+### 09 - Alerts
 - 09 - 00 [Accept Simple Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptSimpleAlert.java)
 - 09 - 01 [Accept Confirm Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptConfirmAlert.java)
 - 09 - 02 [Accept Prompt Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/AcceptPromptAlert.java)
@@ -219,7 +219,7 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 10 - 02 [Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/ClickMethod.java)
 - 10 - 03 [Submit](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SubmitMethod.java)
 
-### 11 - Mouse Events In Selenium
+### 11 - Mouse Events
 - 11 - 00 [Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/Click.java)
 - 11 - 01 [Click And Hold](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/ClickAndHold.java)
 - 11 - 02 [Double Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/DoubleClick.java)
@@ -228,7 +228,7 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 11 - 06 [Move To Element](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/Hover.java)
 - 11 - 07 [Right Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/mouseevents/RightClick.java)
 
-### 12 - Keyboard Events In Selenium
+### 12 - Keyboard Events
 - 12 - 00 [Keyboard Events](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/keyboardevents/KeyboardEvents.java)
 
 ### 13 - Browser Tab
@@ -243,7 +243,7 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 14 - 02 [Switch To New Window](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/windowhandling/SwitchToNewWindow.java)
 - 14 - 03 [Switching One Window To Another](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/windowhandling/SwitchingOneWindowToAnother.java)
 
-### 15 - Frame In Selenium
+### 15 - Frame
 - 15 - 00 [Count The Total Number Of IFrames](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/iframehandling/CountTotalNumberOfIFrames.java)
 - 15 - 01 [Switch To Frames By ID](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/iframehandling/SwitchToFramesByID.java)
 - 15 - 02 [Switch To Frames By Index](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/iframehandling/SwitchToFramesByIndex.java)
@@ -272,4 +272,4 @@ Special thanks to the contributors and the Selenium community for their valuable
 For questions or feedback, please feel free to reach out:
 
 1. Maintainer: [Md. Ebrahim Hossain](https://github.com/ebrahimhossaincse)
-2. Project Link:[Selenium-Tutorials-Java](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java) 
+2. Project Link:[Selenium-Tutorials-Java](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java) 
