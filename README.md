@@ -214,10 +214,10 @@ git clone https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java.git
 - 09 - 06 [Reject Prompt Alert](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/alerthandling/DismissPromptAlert.java)
 
 ### 10 - Form WebElement Commands
-- 10 - 00 [Sendkeys](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SendKeysMethod.java)
-- 10 - 01 [Clear](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/ClearMethod.java)
-- 10 - 02 [Click](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/ClickMethod.java)
-- 10 - 03 [Submit](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SubmitMethod.java)
+- 10 - 00 [Sendkeys](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SendKeysMethod.java)
+- 10 - 01 [Clear](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/ClearMethod.java)
+- 10 - 02 [Click](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/ClickMethod.java)
+- 10 - 03 [Submit](https://github.com/ebrahimhossaincse/Playwright-Tutorials-Java/blob/main/src/test/java/formwebelementcommands/SubmitMethod.java)
 
 ### 11 - Mouse Events In Selenium
 - 11 - 00 [Click](https://github.com/ebrahimhossaincse/Selenium-Tutorials-Java/blob/main/src/test/java/mouseevents/Click.java)
