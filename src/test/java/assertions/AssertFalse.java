@@ -40,6 +40,7 @@ public class AssertFalse {
 	@Test
 	public void testAssertFalse() {      
 		boolean verifyTitle = page.title().equalsIgnoreCase("Selenium Practice - Student Registration");
+		System.out.println(verifyTitle);
 		Assert.assertFalse(verifyTitle);
 	}
 

@@ -43,9 +43,10 @@ public class SubmitMethod {
         ElementHandle pass = page.querySelector("#pass");
 
         email.fill("abc@gmail.com");
+        Thread.sleep(3000);
         pass.fill("123456");
-
-        ElementHandle submitButton = page.querySelector("#submit");
+        Thread.sleep(3000);
+        ElementHandle submitButton = page.querySelector("//button[@name='login']");
         submitButton.click();
         
 		Thread.sleep(5000);

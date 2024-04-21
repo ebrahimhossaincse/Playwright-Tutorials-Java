@@ -33,7 +33,7 @@ public class ScrollUp {
 	@BeforeClass
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
-		page.waitForLoadState();
+		Thread.sleep(40000);
 	}
 
 	@Test(priority = 0)

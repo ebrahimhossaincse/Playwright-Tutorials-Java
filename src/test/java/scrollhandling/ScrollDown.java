@@ -11,7 +11,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class ScrollDown {
-	protected static String url = "https://www.amazon.com/";
+	protected static String url = "https://www.daraz.com.bd/";
 
 	Playwright playwright;
 	BrowserType browserType;
@@ -34,7 +34,7 @@ public class ScrollDown {
 	@BeforeClass
 	public void openUrl() throws InterruptedException{
 		page.navigate(url);
-		page.waitForLoadState();
+		Thread.sleep(40000);
 	}
 
 	@Test(priority = 0)

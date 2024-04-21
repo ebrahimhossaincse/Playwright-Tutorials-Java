@@ -42,6 +42,7 @@ public class AssertTrue {
 	public void testAssertTrue() {
 		ElementHandle element = page.querySelector("#hobbies");
 		element.click();
+		System.out.println(element.isChecked());
         Assert.assertTrue(element.isChecked());
     }
 

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webtablehandling.NumberOfRowsAndColumns">
+      <class name="webtablehandling.FetchTableHeading">
         <methods>
-          <include name="fetchNumberOfRowsAndColumns"/>
-          <include name="closeChromeBrowser"/>
           <include name="openUrl"/>
+          <include name="fetchHeading"/>
           <include name="startChromeBrowser"/>
+          <include name="closeChromeBrowser"/>
         </methods>
-      </class> <!-- webtablehandling.NumberOfRowsAndColumns -->
+      </class> <!-- webtablehandling.FetchTableHeading -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -32,9 +32,9 @@ public class CreateNewWindow {
 		page.navigate("https://www.testingtherapy.com/");
 		Thread.sleep(3000);
 		
-		Page secondTab = browser.newContext().newPage();
-		secondTab.bringToFront();
-		secondTab.navigate("https://www.google.com/");
+		Page secondWindow= browser.newContext().newPage();
+		secondWindow.bringToFront();
+		secondWindow.navigate("https://www.google.com/");
 		Thread.sleep(3000);
 	}
 
