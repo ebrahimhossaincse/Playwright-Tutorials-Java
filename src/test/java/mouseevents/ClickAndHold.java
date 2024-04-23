@@ -34,7 +34,7 @@ public class ClickAndHold {
 	@BeforeClass
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
-		Thread.sleep(5000);
+		page.waitForLoadState();
 	}
 
 	@Test
