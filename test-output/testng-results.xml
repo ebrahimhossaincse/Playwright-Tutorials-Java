@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-02T23:50:41 EDT" name="Default suite" finished-at="2024-05-02T23:50:47 EDT" duration-ms="6591">
+  <suite started-at="2024-05-02T23:51:53 EDT" name="Default suite" finished-at="2024-05-02T23:51:58 EDT" duration-ms="4850">
     <groups>
     </groups>
-    <test started-at="2024-05-02T23:50:41 EDT" name="Default test" finished-at="2024-05-02T23:50:47 EDT" duration-ms="6591">
-      <class name="browserhanding.EdgeBrowserInPlaywright">
-        <test-method is-config="true" signature="startFirefoxBrowser()[pri:0, instance:browserhanding.EdgeBrowserInPlaywright@4310d43]" started-at="2024-05-02T23:50:35 EDT" name="startFirefoxBrowser" finished-at="2024-05-02T23:50:41 EDT" duration-ms="6146" status="PASS">
+    <test started-at="2024-05-02T23:51:53 EDT" name="Default test" finished-at="2024-05-02T23:51:58 EDT" duration-ms="4850">
+      <class name="browserhanding.SafariBrowserInPlaywright">
+        <test-method is-config="true" signature="startFirefoxBrowser()[pri:0, instance:browserhanding.SafariBrowserInPlaywright@4310d43]" started-at="2024-05-02T23:51:47 EDT" name="startFirefoxBrowser" finished-at="2024-05-02T23:51:53 EDT" duration-ms="5505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startFirefoxBrowser -->
-        <test-method signature="openUrl()[pri:0, instance:browserhanding.EdgeBrowserInPlaywright@4310d43]" started-at="2024-05-02T23:50:41 EDT" name="openUrl" finished-at="2024-05-02T23:50:47 EDT" duration-ms="6550" status="PASS">
+        <test-method signature="openUrl()[pri:0, instance:browserhanding.SafariBrowserInPlaywright@4310d43]" started-at="2024-05-02T23:51:53 EDT" name="openUrl" finished-at="2024-05-02T23:51:58 EDT" duration-ms="4800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:browserhanding.EdgeBrowserInPlaywright@4310d43]" started-at="2024-05-02T23:50:47 EDT" name="closeChromeBrowser" finished-at="2024-05-02T23:50:48 EDT" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:browserhanding.SafariBrowserInPlaywright@4310d43]" started-at="2024-05-02T23:51:58 EDT" name="closeChromeBrowser" finished-at="2024-05-02T23:51:58 EDT" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- browserhanding.EdgeBrowserInPlaywright -->
+      </class> <!-- browserhanding.SafariBrowserInPlaywright -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
