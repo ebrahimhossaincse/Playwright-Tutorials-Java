@@ -35,7 +35,7 @@ public class HeadlessEdgeBrowserInPlaywright {
 	@Test
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
-		Thread.sleep(3000);
+		System.out.println("Title: "+page.title());
 	}
 
 	@AfterSuite
