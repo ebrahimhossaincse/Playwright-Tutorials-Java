@@ -33,6 +33,7 @@ public class HeadlessFirefoxBrowserInPlaywright {
 	@Test
 	public void openUrl() {
 		page.navigate(url);
+		System.out.println("Title: "+page.title());
 	}
 
 	@AfterSuite
