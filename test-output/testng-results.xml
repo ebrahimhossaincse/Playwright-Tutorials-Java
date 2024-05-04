@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-03T22:23:50 EDT" name="Default suite" finished-at="2024-05-03T22:23:56 EDT" duration-ms="6269">
+  <suite started-at="2024-05-03T22:24:17 EDT" name="Default suite" finished-at="2024-05-03T22:24:27 EDT" duration-ms="10067">
     <groups>
     </groups>
-    <test started-at="2024-05-03T22:23:50 EDT" name="Default test" finished-at="2024-05-03T22:23:56 EDT" duration-ms="6269">
-      <class name="alerthandling.AcceptSimpleAlert">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-03T22:23:46 EDT" name="startChromeBrowser" finished-at="2024-05-03T22:23:50 EDT" duration-ms="3934" status="PASS">
+    <test started-at="2024-05-03T22:24:17 EDT" name="Default test" finished-at="2024-05-03T22:24:27 EDT" duration-ms="10067">
+      <class name="headlessbrowserhandle.HeadlessChromeBrowserInPlaywright">
+        <test-method is-config="true" signature="startChromeBrowserInHeadlessMode()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInPlaywright@4310d43]" started-at="2024-05-03T22:24:13 EDT" name="startChromeBrowserInHeadlessMode" finished-at="2024-05-03T22:24:17 EDT" duration-ms="4142" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startChromeBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-03T22:23:50 EDT" name="openUrl" finished-at="2024-05-03T22:23:51 EDT" duration-ms="1030" status="PASS">
+        </test-method> <!-- startChromeBrowserInHeadlessMode -->
+        <test-method signature="openUrl()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInPlaywright@4310d43]" started-at="2024-05-03T22:24:17 EDT" name="openUrl" finished-at="2024-05-03T22:24:27 EDT" duration-ms="10047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="acceptAlert()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-03T22:23:51 EDT" name="acceptAlert" finished-at="2024-05-03T22:23:56 EDT" duration-ms="5183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acceptAlert -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-03T22:23:56 EDT" name="closeChromeBrowser" finished-at="2024-05-03T22:23:56 EDT" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInPlaywright@4310d43]" started-at="2024-05-03T22:24:27 EDT" name="closeChromeBrowser" finished-at="2024-05-03T22:24:27 EDT" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- alerthandling.AcceptSimpleAlert -->
+      </class> <!-- headlessbrowserhandle.HeadlessChromeBrowserInPlaywright -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

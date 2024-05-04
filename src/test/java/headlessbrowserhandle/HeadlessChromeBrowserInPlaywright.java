@@ -32,7 +32,6 @@ public class HeadlessChromeBrowserInPlaywright {
 	@Test
 	public void openUrl() throws InterruptedException {
 		page.navigate(url);
-		Thread.sleep(5000);
 	}
 
 	@AfterSuite
