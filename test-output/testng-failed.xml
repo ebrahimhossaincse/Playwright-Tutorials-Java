@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webtablehandling.FetchTableHeading">
+      <class name="alerthandling.DismissConfirmAlert">
         <methods>
-          <include name="openUrl"/>
-          <include name="fetchHeading"/>
-          <include name="startChromeBrowser"/>
           <include name="closeChromeBrowser"/>
+          <include name="dismissAlert"/>
+          <include name="startChromeBrowser"/>
+          <include name="openUrl"/>
         </methods>
-      </class> <!-- webtablehandling.FetchTableHeading -->
+      </class> <!-- alerthandling.DismissConfirmAlert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
