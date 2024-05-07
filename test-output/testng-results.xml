@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-06T23:32:14 EDT" name="Default suite" finished-at="2024-05-06T23:32:18 EDT" duration-ms="4170">
+  <suite started-at="2024-05-06T23:32:39 EDT" name="Default suite" finished-at="2024-05-06T23:32:46 EDT" duration-ms="6973">
     <groups>
     </groups>
-    <test started-at="2024-05-06T23:32:14 EDT" name="Default test" finished-at="2024-05-06T23:32:18 EDT" duration-ms="4170">
-      <class name="alerthandling.AcceptPromptAlert">
-        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:alerthandling.AcceptPromptAlert@2dc54ad4]" started-at="2024-05-06T23:32:10 EDT" name="startChromeBrowser" finished-at="2024-05-06T23:32:14 EDT" duration-ms="4148" status="PASS">
+    <test started-at="2024-05-06T23:32:39 EDT" name="Default test" finished-at="2024-05-06T23:32:46 EDT" duration-ms="6973">
+      <class name="alerthandling.AcceptSimpleAlert">
+        <test-method is-config="true" signature="startChromeBrowser()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-06T23:32:35 EDT" name="startChromeBrowser" finished-at="2024-05-06T23:32:39 EDT" duration-ms="4050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:alerthandling.AcceptPromptAlert@2dc54ad4]" started-at="2024-05-06T23:32:14 EDT" name="openUrl" finished-at="2024-05-06T23:32:16 EDT" duration-ms="1954" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-06T23:32:39 EDT" name="openUrl" finished-at="2024-05-06T23:32:41 EDT" duration-ms="1714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="acceptAlert()[pri:0, instance:alerthandling.AcceptPromptAlert@2dc54ad4]" started-at="2024-05-06T23:32:16 EDT" name="acceptAlert" finished-at="2024-05-06T23:32:18 EDT" duration-ms="2160" status="PASS">
+        <test-method signature="acceptAlert()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-06T23:32:41 EDT" name="acceptAlert" finished-at="2024-05-06T23:32:46 EDT" duration-ms="5192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acceptAlert -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:alerthandling.AcceptPromptAlert@2dc54ad4]" started-at="2024-05-06T23:32:18 EDT" name="closeChromeBrowser" finished-at="2024-05-06T23:32:18 EDT" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:alerthandling.AcceptSimpleAlert@2dc54ad4]" started-at="2024-05-06T23:32:46 EDT" name="closeChromeBrowser" finished-at="2024-05-06T23:32:46 EDT" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- alerthandling.AcceptPromptAlert -->
+      </class> <!-- alerthandling.AcceptSimpleAlert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
