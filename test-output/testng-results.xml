@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-15T23:05:08 EDT" name="Default suite" finished-at="2024-05-15T23:05:10 EDT" duration-ms="1304">
+  <suite started-at="2024-05-15T23:06:32 EDT" name="Default suite" finished-at="2024-05-15T23:06:34 EDT" duration-ms="1789">
     <groups>
     </groups>
-    <test started-at="2024-05-15T23:05:08 EDT" name="Default test" finished-at="2024-05-15T23:05:10 EDT" duration-ms="1304">
-      <class name="headlessbrowserhandle.HeadlessChromeBrowserInPlaywright">
-        <test-method is-config="true" signature="startChromeBrowserInHeadlessMode()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInPlaywright@4310d43]" started-at="2024-05-15T23:05:05 EDT" name="startChromeBrowserInHeadlessMode" finished-at="2024-05-15T23:05:08 EDT" duration-ms="3758" status="PASS">
+    <test started-at="2024-05-15T23:06:32 EDT" name="Default test" finished-at="2024-05-15T23:06:34 EDT" duration-ms="1789">
+      <class name="headlessbrowserhandle.HeadlessEdgeBrowserInPlaywright">
+        <test-method is-config="true" signature="startEdgeBrowserInHeadLessMode()[pri:0, instance:headlessbrowserhandle.HeadlessEdgeBrowserInPlaywright@4310d43]" started-at="2024-05-15T23:06:28 EDT" name="startEdgeBrowserInHeadLessMode" finished-at="2024-05-15T23:06:32 EDT" duration-ms="3819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startChromeBrowserInHeadlessMode -->
-        <test-method signature="openUrl()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInPlaywright@4310d43]" started-at="2024-05-15T23:05:08 EDT" name="openUrl" finished-at="2024-05-15T23:05:10 EDT" duration-ms="1282" status="PASS">
+        </test-method> <!-- startEdgeBrowserInHeadLessMode -->
+        <test-method signature="openUrl()[pri:0, instance:headlessbrowserhandle.HeadlessEdgeBrowserInPlaywright@4310d43]" started-at="2024-05-15T23:06:32 EDT" name="openUrl" finished-at="2024-05-15T23:06:34 EDT" duration-ms="1767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:headlessbrowserhandle.HeadlessChromeBrowserInPlaywright@4310d43]" started-at="2024-05-15T23:05:10 EDT" name="closeChromeBrowser" finished-at="2024-05-15T23:05:10 EDT" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="closeChromeBrowser()[pri:0, instance:headlessbrowserhandle.HeadlessEdgeBrowserInPlaywright@4310d43]" started-at="2024-05-15T23:06:34 EDT" name="closeChromeBrowser" finished-at="2024-05-15T23:06:34 EDT" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChromeBrowser -->
-      </class> <!-- headlessbrowserhandle.HeadlessChromeBrowserInPlaywright -->
+      </class> <!-- headlessbrowserhandle.HeadlessEdgeBrowserInPlaywright -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
