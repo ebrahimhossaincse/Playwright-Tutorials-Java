@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="alerthandling.DismissConfirmAlert">
+      <class name="iframehandling.SwitchToFramesByID">
         <methods>
           <include name="closeChromeBrowser"/>
-          <include name="dismissAlert"/>
+          <include name="idendtifyIFramesById"/>
           <include name="startChromeBrowser"/>
           <include name="openUrl"/>
         </methods>
-      </class> <!-- alerthandling.DismissConfirmAlert -->
+      </class> <!-- iframehandling.SwitchToFramesByID -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

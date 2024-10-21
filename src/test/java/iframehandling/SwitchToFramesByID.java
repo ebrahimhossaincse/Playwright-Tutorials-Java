@@ -24,7 +24,7 @@ public class SwitchToFramesByID {
 	public void startChromeBrowser() {
 		playwright = Playwright.create();
 		browserType = playwright.chromium();
-		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
+		browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
 		context = browser.newContext(new Browser.NewContextOptions());
 
 		page = browser.newPage();
@@ -41,7 +41,7 @@ public class SwitchToFramesByID {
 	public void idendtifyIFramesById() {
 		page.frame("frame1");
 		ElementHandle text = page.querySelector("//*[text()='Selenium - Automation Practice Form']");
-		System.out.println(text.textContent());
+		System.out.println("TEXT MESSAGE: "+text.textContent());
 	}
 
 	@AfterSuite
